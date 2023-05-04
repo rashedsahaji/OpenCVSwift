@@ -13,6 +13,13 @@
 		6F1F441E29CF5644002B41D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F441C29CF5644002B41D0 /* Main.storyboard */; };
 		6F1F442029CF5645002B41D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F441F29CF5645002B41D0 /* Assets.xcassets */; };
 		6F1F442329CF5645002B41D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F442129CF5645002B41D0 /* LaunchScreen.storyboard */; };
+		6F1F442C29CF5661002B41D0 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1F442B29CF5661002B41D0 /* opencv2.framework */; };
+		6F1F443529CF5738002B41D0 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F443429CF5738002B41D0 /* OpenCVWrapper.mm */; };
+		6F50211029D029F700059883 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F50210F29D029F700059883 /* UIImage+OpenCV.mm */; };
+		6F50211429D02BC400059883 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F50211329D02BC400059883 /* UIImage+Rotate.m */; };
+		6F50211629D0324E00059883 /* court.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F50211529D0324E00059883 /* court.jpg */; };
+		6F6AC91929D166CD0064F863 /* cc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F6AC91829D166CD0064F863 /* cc.jpg */; };
+		6F6AC91B29D176AF0064F863 /* dd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F6AC91A29D176AF0064F863 /* dd.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,19 @@
 		6F1F441F29CF5645002B41D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1F442229CF5645002B41D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1F442429CF5645002B41D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1F442B29CF5661002B41D0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		6F1F443029CF56A9002B41D0 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		6F1F443229CF5738002B41D0 /* OpenCVSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6F1F443329CF5738002B41D0 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenCVWrapper.h; path = OpenCVSwift/OpenCVWrapper.h; sourceTree = SOURCE_ROOT; };
+		6F1F443429CF5738002B41D0 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OpenCVWrapper.mm; path = OpenCVSwift/OpenCVWrapper.mm; sourceTree = SOURCE_ROOT; };
+		6F1F443629CF57DE002B41D0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6F50210E29D029F700059883 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		6F50210F29D029F700059883 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		6F50211229D02B9F00059883 /* UIImage+Rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		6F50211329D02BC400059883 /* UIImage+Rotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		6F50211529D0324E00059883 /* court.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = court.jpg; sourceTree = "<group>"; };
+		6F6AC91829D166CD0064F863 /* cc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cc.jpg; sourceTree = "<group>"; };
+		6F6AC91A29D176AF0064F863 /* dd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dd.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1F442C29CF5661002B41D0 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +61,10 @@
 		6F1F440A29CF5644002B41D0 = {
 			isa = PBXGroup;
 			children = (
+				6F1F442F29CF5695002B41D0 /* Libs */,
 				6F1F441529CF5644002B41D0 /* OpenCVSwift */,
 				6F1F441429CF5644002B41D0 /* Products */,
+				6F1F442A29CF5661002B41D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +79,9 @@
 		6F1F441529CF5644002B41D0 /* OpenCVSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6F50211529D0324E00059883 /* court.jpg */,
+				6F6AC91829D166CD0064F863 /* cc.jpg */,
+				6F6AC91A29D176AF0064F863 /* dd.jpg */,
 				6F1F441629CF5644002B41D0 /* AppDelegate.swift */,
 				6F1F441829CF5644002B41D0 /* SceneDelegate.swift */,
 				6F1F441A29CF5644002B41D0 /* ViewController.swift */,
@@ -65,6 +91,46 @@
 				6F1F442429CF5645002B41D0 /* Info.plist */,
 			);
 			path = OpenCVSwift;
+			sourceTree = "<group>";
+		};
+		6F1F442A29CF5661002B41D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F442B29CF5661002B41D0 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F1F442F29CF5695002B41D0 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F443029CF56A9002B41D0 /* opencv2.framework */,
+				6F1F443329CF5738002B41D0 /* OpenCVWrapper.h */,
+				6F1F443429CF5738002B41D0 /* OpenCVWrapper.mm */,
+				6F1F443629CF57DE002B41D0 /* PrefixHeader.pch */,
+				6F1F443229CF5738002B41D0 /* OpenCVSwift-Bridging-Header.h */,
+				6F50211129D02B5E00059883 /* UIImage+Rotation */,
+				6F50210D29D029B800059883 /* UIImage+OpenCV */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6F50210D29D029B800059883 /* UIImage+OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				6F50210E29D029F700059883 /* UIImage+OpenCV.h */,
+				6F50210F29D029F700059883 /* UIImage+OpenCV.mm */,
+			);
+			path = "UIImage+OpenCV";
+			sourceTree = "<group>";
+		};
+		6F50211129D02B5E00059883 /* UIImage+Rotation */ = {
+			isa = PBXGroup;
+			children = (
+				6F50211229D02B9F00059883 /* UIImage+Rotate.h */,
+				6F50211329D02BC400059883 /* UIImage+Rotate.m */,
+			);
+			path = "UIImage+Rotation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +165,7 @@
 				TargetAttributes = {
 					6F1F441229CF5644002B41D0 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -125,7 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F6AC91929D166CD0064F863 /* cc.jpg in Resources */,
+				6F50211629D0324E00059883 /* court.jpg in Resources */,
 				6F1F442329CF5645002B41D0 /* LaunchScreen.storyboard in Resources */,
+				6F6AC91B29D176AF0064F863 /* dd.jpg in Resources */,
 				6F1F442029CF5645002B41D0 /* Assets.xcassets in Resources */,
 				6F1F441E29CF5644002B41D0 /* Main.storyboard in Resources */,
 			);
@@ -139,7 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1F441B29CF5644002B41D0 /* ViewController.swift in Sources */,
+				6F50211029D029F700059883 /* UIImage+OpenCV.mm in Sources */,
+				6F50211429D02BC400059883 /* UIImage+Rotate.m in Sources */,
 				6F1F441729CF5644002B41D0 /* AppDelegate.swift in Sources */,
+				6F1F443529CF5738002B41D0 /* OpenCVWrapper.mm in Sources */,
 				6F1F441929CF5644002B41D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,9 +358,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5FZ62RK6S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Libs/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenCVSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,7 +382,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.OpenCVSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Libs/OpenCVSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Libs";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,9 +395,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5FZ62RK6S;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Libs/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OpenCVSwift/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,7 +419,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigoh.OpenCVSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Libs/OpenCVSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Libs";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
